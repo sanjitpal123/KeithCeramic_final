@@ -285,6 +285,7 @@ function ManagementForm() {
                     <option>Founder</option>
                     <option>Investor</option>
                     <option>Leaders</option>
+                    <option>Co-Founder</option>
                   </select>
 
                   <div className="flex flex-wrap justify-between gap-4 pt-2">
@@ -385,6 +386,7 @@ function ManagementForm() {
                 <option>Founder</option>
                 <option>Investor</option>
                 <option>Leader</option>
+                <option>Co-Founder</option>
                 
               </select>
 

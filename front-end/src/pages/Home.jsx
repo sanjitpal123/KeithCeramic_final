@@ -121,15 +121,35 @@ function Home() {
                 backgroundRepeat: "no-repeat",
               }}
             >
+             <div className="w-screen min-h-[100vh]">
+            <div
+              className="w-screen h-[100vh] flex items-center justify-start"
+              style={{
+                backgroundImage: "url('/assets/images/persons/KEITH CERAMIC TEAM-min.JPG')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <div className="w-screen min-h-[100vh]">
+            <div
+              className="w-screen h-[100vh] flex items-start justify-center"
+              style={{
+                backgroundImage: "url('/assets/images/persons/KEITH CERAMIC TEAM-min.JPG')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
               <motion.div
                 initial="hidden"
                 whileInView="visible"
                 variants={fadeRight}
                 viewport={{ amount: "some" }}
-                className="h-auto mx-5 md:mx-10 w-[90%] md:w-[60%] lg:w-[40%] flex flex-col rounded-md gap-4 justify-center items-center bg-gray-200 opacity-90 p-6 md:p-10"
+                className="h-auto mx-5 md:mx-10 w-[90%] md:w-[60%] lg:w-[40%] mt-4 md:mt-20 flex flex-col rounded-md gap-4 justify-center items-center bg-gray-200 opacity-90 p-6 md:p-10"
               >
                 <h1 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-center text-gray-800">
-                  Keith Ceramic - Premium Handmade Pottery
+                  Keith Ceramic - Since 1992
                 </h1>
                 <img
                   src="./assets/images/logo.png"
@@ -138,6 +158,10 @@ function Home() {
                   className="h-[50px] md:h-[80px] lg:h-[100px] object-contain"
                 />
               </motion.div>
+            </div>
+          </div>
+            </div>
+          </div>
             </div>
           </div>
 
@@ -183,7 +207,7 @@ function Home() {
             variants={fadeLeft}
             viewport={{ amount: "some" }}
           >
-            <Testimonial />
+            {/* <Testimonial /> */}
           </motion.div>
         </div>
       )}
