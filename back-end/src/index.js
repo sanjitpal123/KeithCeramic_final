@@ -6,7 +6,7 @@ import cors from 'cors'
 dotenv.config();
 const app = express();
 let originUrl
-const environment=process.env.NODE_ENV
+const environment=process.env.NODE_ENV 
 console.log(environment)
 
 if(environment==="development"){
@@ -36,7 +36,8 @@ app.get('/', (req, res) => {
 });
 
 
-app.listen(process.env.PORT, () => {
-    console.log('Server is running on port ',process.env.PORT);
-    connect();
-});  
+const port = process.env.PORT || 5000; // Use PORT from .env or default to 5000
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+  connect();
+});
